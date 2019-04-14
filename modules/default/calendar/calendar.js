@@ -290,8 +290,7 @@ Module.register("calendar", {
 						}
 					}
 					if(this.config.showEnd){
-						timeWrapper.innerHTML += "-" ;
-						timeWrapper.innerHTML += this.capFirst(moment(event.endDate  , "x").format(this.config.fullDayEventDateFormat));
+						timeWrapper.innerHTML += "<span class=\"item-until\"> - " + this.capFirst(moment(event.endDate  , "x").format(this.config.fullDayEventDateFormat)) + "</span>";
 					}
 				} else {
 					if (event.startDate >= new Date()) {
@@ -336,9 +335,7 @@ Module.register("calendar", {
 						);
 					}
 					if (this.config.showEnd) {
-						timeWrapper.innerHTML += "-";
-						timeWrapper.innerHTML += this.capFirst(moment(event.endDate, "x").format(this.config.dateEndFormat));
-
+						timeWrapper.innerHTML += "<span class=\"item-until\"> - " + this.capFirst(moment(event.endDate, "x").format(this.config.dateEndFormat)) + "</span>";
 					}
 				}
 				//timeWrapper.innerHTML += ' - '+ moment(event.startDate,'x').format('lll');
