@@ -10,5 +10,20 @@
  *****************************************************/
 
  body {
- 	
+ 	font-family: "Segoe UI Light";
+ 	margin: 30px;
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+/*
+    background: url("124_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+*/
  }
+.module.calendar .symbol {
+	display: none;
+}
+
+.module.calendar .item-until {
+	display: none;
+}
